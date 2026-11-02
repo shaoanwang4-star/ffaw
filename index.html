@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>某某科技 | 官方网站</title>
+  <meta name="description" content="某某科技，专注企业数字化解决方案，助力业务增长与效率提升。">
+  <meta name="keywords" content="企业官网, 科技公司, 数字化转型, 软件开发, 云服务">
+  <meta name="theme-color" content="#0b5cff">
+  <meta property="og:title" content="某某科技 | 官方网站">
+  <meta property="og:description" content="专注企业数字化解决方案，助力业务增长与效率提升。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="首页">
+        <span class="brand-mark">M</span>
+        <span class="brand-name">某某科技</span>
+      </a>
+      <button class="nav-toggle" aria-label="切换导航" aria-expanded="false">菜单</button>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="#home">首页</a>
+        <a href="#about">关于我们</a>
+        <a href="#services">服务</a>
+        <a href="#contact">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>用科技驱动增长</h1>
+        <p>提供从策略到落地的一站式企业数字化解决方案，覆盖产品、数据、云与安全。</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#contact">获取咨询</a>
+          <a class="btn btn-ghost" href="#services">了解服务</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="col">
+          <h2>关于我们</h2>
+          <p>某某科技是一家以客户价值为中心的技术公司，团队来自互联网与企业服务行业，擅长打造可靠、可扩展、可运营的数字产品。</p>
+          <ul class="bullets">
+            <li>行业经验与最佳实践</li>
+            <li>以结果为导向的交付体系</li>
+            <li>合规与安全内建</li>
+          </ul>
+        </div>
+        <div class="col card">
+          <div class="stat">
+            <div class="stat-num">200+</div>
+            <div class="stat-label">企业客户</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">99.95%</div>
+            <div class="stat-label">SLA 保障</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">7×24</div>
+            <div class="stat-label">技术支持</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2>我们的服务</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>定制软件开发</h3>
+            <p>Web、移动端与微服务架构设计与实现，覆盖从需求到运维全周期。</p>
+          </div>
+          <div class="card">
+            <h3>数据与智能</h3>
+            <p>数据平台搭建、可视化与分析，结合模型能力提升决策效率。</p>
+          </div>
+          <div class="card">
+            <h3>云与DevOps</h3>
+            <p>多云架构、容器化与自动化流程，构建高弹性与高可用基础设施。</p>
+          </div>
+          <div class="card">
+            <h3>安全与合规</h3>
+            <p>安全评估、渗透测试与合规咨询，保障业务稳定合规运行。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>联系我们</h2>
+        <p>留下联系方式，专业顾问将在一个工作日内与您联系。</p>
+        <form class="contact-form" action="mailto:info@example.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <label for="name">姓名</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="form-row">
+            <label for="email">邮箱</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">需求</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">提交</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 某某科技</div>
+      <div class="footer-links">
+        <a href="#about">关于</a>
+        <a href="#services">服务</a>
+        <a href="#contact">联系</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./main.js"></script>
+</body>
+</html>
